@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#search-bar {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 60%;
+    max-width: 600px;
+    border: none;
+    border-radius: 4px;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #444;
+    color: white;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: fixed;
+    left: 0;
+    top: 60px; /* height of header */
+    height: calc(100% - 60px);
+    transform: translateX(-100%);
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 2.5rem 0; /* Increased margin for more spacing */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.toggle-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 220px; /* Offset for sidebar plus additional space */
+    transition: margin-left 0.3s ease;
+}
+
+.main.active {
+    margin-left: 20px; /* Reduced offset when sidebar is hidden */
+}
+
+.book-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Increased gap for more spacing */
+}
+
+.book {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

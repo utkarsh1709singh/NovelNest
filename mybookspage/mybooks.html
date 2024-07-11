@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Books</title>
+    <link rel="stylesheet" href="mybooks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Books</h1>
+        <input type="text" placeholder="Search for books..." id="search-bar">
+        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+    </header>
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mybooks.html">My Books</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Currently Reading</h2>
+            <div class="currently-reading">
+                <div class="book">
+                    <img src="file:///C:/Users/mitho/OneDrive/デスクトップ/novel%20nest%20final%20project/home%20page/img1.png" alt="Book 1">
+                    <p>Harry Potter and the Sorcerer's Stone</p>
+                    <label for="progress1">Progress:</label>
+                    <progress id="progress-bar1" value="70" max="500"></progress>
+                </div>
+                <div class="book">
+                    <img src="file:///C:/Users/mitho/OneDrive/デスクトップ/novel%20nest%20final%20project/home%20page/img2.png" alt="Book 2">
+                    <p>All the Light We Cannot See</p>
+                    <label for="progress2">Progress:</label>
+                    <progress id="progress-bar2" value="80" max="300"></progress>
+                </div>
+                <div class="book">
+                    <img src="file:///C:/Users/mitho/OneDrive/デスクトップ/novel%20nest%20final%20project/home%20page/img3.png" alt="Book 3">
+                    <p>Rohinton Mistry - A Fine Balance</p>
+                    <label for="progress3">Progress:</label>
+                    <progress id="progress-bar3" value="50" max="400"></progress>
+                </div>
+                <!-- Add more books as needed -->
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Book Collection Manager. All rights reserved.</p>
+    </footer>
+    <script src="mybooks.js"></script>
+</body>
+</html>
+
